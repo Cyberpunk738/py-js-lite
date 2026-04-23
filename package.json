@@ -1,0 +1,27 @@
+{
+  "name": "pyjs-lite",
+  "version": "1.0.0",
+  "description": "A lightweight Python-to-JavaScript transpiler using regex-based transformations",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./transform": "./src/transform.js",
+    "./rules/*": "./src/rules/*.js"
+  },
+  "scripts": {
+    "playground": "npx -y serve playground -l 3000",
+    "test": "node tests/run.js",
+    "example": "node examples/demo.js"
+  },
+  "keywords": [
+    "python",
+    "javascript",
+    "transpiler",
+    "pyjs",
+    "regex",
+    "transform"
+  ],
+  "author": "",
+  "license": "MIT"
+}
